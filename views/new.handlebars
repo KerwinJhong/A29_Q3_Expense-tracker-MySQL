@@ -1,0 +1,38 @@
+<!-- ./views/layouts/new.handlebars -->
+<div id="newpage" class="text-left">
+  <form action="/records" method="POST">
+    <div>
+      <label for="name" class="my-1">名稱：(20字內)</label>
+      <input type="text" placeholder="名稱" name="name" id="name" maxlength="10" class="form-control" required>
+    </div>
+    <div class="form-group m-0">
+      <label for="merchant" class="my-1">商家：</label>
+      <input class="form-control" type="merchant" id="merchant" maxlength="10" name="merchant">
+    </div>
+    <div class="form-group m-0">
+      <label for="caseDate" class="my-1">時間：</label>
+      <input class="form-control" type="date" id="caseDate" name="caseDate" required>
+    </div>
+    <div>
+      <label for="category" class="my-1">類別：</label>
+      <select class="custom-select" name="category" id="category">
+        <option selected>Select</option>
+        <option value="home">家居物業</option>
+        <option value="shuttle-van">交通出行</option>
+        <option value="grin-beam">休閒娛樂</option>
+        <option value="utensils">餐飲食品</option>
+        <option value="pen">其他</option>
+      </select>
+    </div>
+    <div>
+      <label for="amount" class="my-1">金額：</label>
+      <input type="number" placeholder="金額" name="amount" id="amount" class="form-control" required>
+    </div>
+    <div class="row w-100 m-0 mt-3">
+      <div class="col text-right p-0">
+        <a class="btn btn-secondary" href="/">返回</a>
+        <button type="submit" class="btn btn-success" id="newpagebtn">送出</button>
+      </div>
+    </div>
+  </form>
+</div>

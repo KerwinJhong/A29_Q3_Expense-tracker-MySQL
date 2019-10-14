@@ -1,0 +1,161 @@
+/* ============== new ============== */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ============== new ============== */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    z-index: 2;
+}
+
+.banner {
+    z-index: -1;
+    position: relative;
+    margin: -5px;
+    height: 100vh;
+    background: #dddddd center center url('https://image.freepik.com/free-photo/group-friends-eating-restaurant_23-2148006691.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+}
+
+#search-bar {
+    margin: 0 auto;
+    max-width: 680px;
+    background-color: #fce2cf;
+    border-radius: 8px;
+    padding: 20px 30px;
+    border: 0;
+    margin-top: -320px;
+    margin-bottom: 240px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.boss,
+.you {
+    width: 340px;
+}
+
+
+/* ============== new ============== */
+
+#newpage {
+    margin: 0 auto;
+    max-width: 400px;
+    background-color: #fce2cf;
+    border-radius: 8px;
+    padding: 20px 30px;
+    border: 0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+/* ============== index ============== */
+
+.index-header {
+    text-align: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ============== footer ============== */
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fce2cf;
+    color: #000000;
+    text-align: center;
+}
+
+footer ul {
+    padding-inline-start: 0px;
+}
+
+footer li {
+    color: #6d7b77;
+    list-style-type: none;
+}
+
+footer h6 {
+    text-transform: uppercase;
+}
+
+.socialicon {
+    display: inline-block;
+}
+
+footer .socialicon a {
+    margin-right: 5px;
+}
+
+footer .fa-facebook-square {
+    color: #3b5998;
+    font-size: 40px;
+}
+
+footer .fa-github-square {
+    color: black;
+    font-size: 40px;
+}
+
+footer .fa-pinterest-square {
+    color: #cb2027;
+    font-size: 40px;
+}
+
+footer .fa-instagram {
+    color: #c32da2;
+    font-size: 40px;
+}
+
+footer .copyright {
+    padding-top: 40px;
+    border-top: 1px solid #6d7b77;
+    padding-bottom: 30px;
+}
+
+@media (max-width: 575.98px) {
+    html {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1200px) {
+    html {
+        font-size: 18px;
+    }
+}
