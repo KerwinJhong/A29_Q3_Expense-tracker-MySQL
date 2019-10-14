@@ -1,6 +1,6 @@
 # 老爸的私房錢
 
-建立私人記帳清單，Node.js, Express, MySQL，RESTful API，CRU，
+建立私人記帳清單，Node.js, Express, MySQL，RESTful API，CRUD
 
 ## Features
 1.  使用者可以建立自己的帳號
