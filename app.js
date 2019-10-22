@@ -1,11 +1,7 @@
 ﻿const express = require('express')
 const app = express()
-if (process.env.NODE_ENV !== 'production') { // 如果不是 production 模式
-  require('dotenv').config() // 使用 dotenv 讀取 .env 檔案
-}
-const mongoose = require('mongoose')
+if (process.env.NODE_ENV !== 'production') { require('dotenv').config() }
 const exphbs = require('express-handlebars')
-const bodyParser = require('body-parser')
 const methodOverride = require('method-override')
 const session = require('express-session')
 const passport = require('passport')
@@ -13,7 +9,8 @@ const flash = require('connect-flash')
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
-app.use(bodyParser.urlencoded({ extended: true }))
+app.set('port', process.env.PORT || 3000)
+app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride('_method'))
 
 const db = require('./models')
@@ -45,6 +42,11 @@ app.use('/records', require('./routes/records'))
 app.use('/users', require('./routes/users'))
 app.use('/auth', require('./routes/auths'))
 
-app.listen(process.env.PORT || 3000, () => {
-  console.log('app is running')
+app.listen(app.get('port'), () => {
+  console.log(
+    'Node.js Server with Express is running.',
+    '\033[33m',
+    `=> http://localhost:${app.get('port')}`,
+    '\033[0m'
+  )
 })

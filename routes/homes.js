@@ -27,7 +27,6 @@ router.get('/', authenticated, (req, res) => {
           [Op.like]: categoryValue
         }
       }
-
       // =========  search  =========
       if (year === "全部") year = ""
       if (month === "全部") month = ""
